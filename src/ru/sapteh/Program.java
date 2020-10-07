@@ -11,34 +11,26 @@ public class Program {
         int[] arr3 = new int[10];
         int[] arr4 = new int[10];
         arrRandom(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.printf("%d ",arr[i]);
-        }
-        System.out.println(" ");
+        sealArr(arr);
         arrRandom(arr1);
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.printf("%d ",arr1[i]);
-        }
-        System.out.println(" ");
+        sealArr(arr1);
         arrRandom(arr2);
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.printf("%d ",arr2[i]);
-        }
-        System.out.println(" ");
+        sealArr(arr2);
         arrRandom(arr3);
-        for (int i = 0; i < arr3.length; i++) {
-            System.out.printf("%d ",arr3[i]);
-        }
-        System.out.println(" ");
+        sealArr(arr3);
         arrRandom(arr4);
-        for (int i = 0; i < arr4.length; i++) {
-            System.out.printf("%d ",arr4[i]);
-        }
+       sealArr(arr4);
     }
     public static int[] arrRandom(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) Math.round((Math.random() * 100) - 15);
         }
         return arr;
+    }
+    public static void sealArr(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("%d ",arr[i]);
+        }
+        System.out.println(" ");
     }
 }
